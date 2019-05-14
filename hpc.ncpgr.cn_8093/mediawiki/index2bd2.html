@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="zh-CN" dir="ltr" class="client-nojs">
+
+<!-- Mirrored from hpc.ncpgr.cn:8093/mediawiki/index.php?title=LSF_%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8&action=edit by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 13 May 2019 09:23:53 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="UTF-8" />
+<title>查看“LSF 基本使用”的源代码 - 作物遗传改良国家重点实验室集群系统</title>
+<meta name="generator" content="MediaWiki 1.24.1" />
+<meta name="robots" content="noindex,nofollow" />
+<link rel="shortcut icon" href="http://hpc.ncpgr.cn:8093/favicon.ico" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://hpc.ncpgr.cn:8093/mediawiki/opensearch_desc.php" title="作物遗传改良国家重点实验室集群系统 (zh-cn)" />
+<link rel="EditURI" type="application/rsd+xml" href="http://hpc.ncpgr.cn:8093/mediawiki/api.php?action=rsd" />
+<link rel="alternate" hreflang="x-default" href="http://hpc.ncpgr.cn:8093/mediawiki/index.php/LSF_基本使用" />
+<link rel="alternate" type="application/atom+xml" title="作物遗传改良国家重点实验室集群系统的Atom feed" href="http://hpc.ncpgr.cn:8093/mediawiki/index.php?title=%E7%89%B9%E6%AE%8A:%E6%9C%80%E8%BF%91%E6%9B%B4%E6%94%B9&amp;feed=atom" />
+<link rel="stylesheet" href="http://hpc.ncpgr.cn:8093/mediawiki/load.php?debug=false&amp;lang=zh-cn&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.skinning.interface%7Cmediawiki.ui.button%7Cskins.vector.styles&amp;only=styles&amp;skin=vector&amp;*" />
+<meta name="ResourceLoaderDynamicStyles" content="" />
+<link rel="stylesheet" href="http://hpc.ncpgr.cn:8093/mediawiki/load.php?debug=false&amp;lang=zh-cn&amp;modules=site&amp;only=styles&amp;skin=vector&amp;*" />
+<style>a:lang(ar),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}
+/* cache key: wiki-wiki:resourceloader:filter:minify-css:7:fa3f35a35ca6833c3a136d86b661109f */</style>
+<script src="http://hpc.ncpgr.cn:8093/mediawiki/load.php?debug=false&amp;lang=zh-cn&amp;modules=startup&amp;only=scripts&amp;skin=vector&amp;*"></script>
+<script>if(window.mw){
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"LSF_基本使用","wgTitle":"LSF 基本使用","wgCurRevisionId":380,"wgRevisionId":0,"wgArticleId":85,"wgIsArticle":false,"wgIsRedirect":false,"wgAction":"edit","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":true,"wgPageContentLanguage":"zh-cn","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"zh","wgMonthNames":["","1月","2月","3月","4月","5月","6月","7月","8月","9月","10月","11月","12月"],"wgMonthNamesShort":["","1月","2月","3月","4月","5月","6月","7月","8月","9月","10月","11月","12月"],"wgRelevantPageName":"LSF_基本使用","wgIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgWikiEditorEnabledModules":{"toolbar":true,"dialogs":true,"hidesig":true,"preview":true,"previewDialog":false,"publish":true}});
+}</script><script>if(window.mw){
+mw.loader.implement("user.options",function($,jQuery){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"editfont":"default","editondblclick":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":1,"extendwatchlist":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nickname":"","norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"rcdays":7,"rclimit":50,"rows":25,"showhiddencats":0,"shownumberswatching":1,"showtoolbar":1,"skin":"vector","stubthreshold":0,"thumbsize":5,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":1,"watchdefault":1,"watchdeletion":0,"watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"watchrollback":0,
+"wllimit":250,"useeditwarning":1,"prefershttps":1,"usebetatoolbar":1,"usebetatoolbar-cgd":1,"wikieditor-preview":1,"wikieditor-publish":1,"language":"zh-cn","variant-gan":"gan","variant-iu":"iu","variant-kk":"kk","variant-ku":"ku","variant-shi":"shi","variant-sr":"sr","variant-tg":"tg","variant-uz":"uz","variant-zh":"zh","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"variant":"zh-cn"});},{},{});mw.loader.implement("user.tokens",function($,jQuery){mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\"});},{},{});
+/* cache key: wiki-wiki:resourceloader:filter:minify-js:7:01a64f4f54c00905cdabe1083f478124 */
+}</script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.legacy.ajax","skins.vector.js"]);
+}</script>
+<!--[if lt IE 7]><style type="text/css">body{behavior:url("/mediawiki/skins/Vector/csshover.min.htc")}</style><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-LSF_基本使用 skin-vector action-edit vector-animateLayout">
+		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+
+						<h1 id="firstHeading" class="firstHeading" lang="zh-CN"><span dir="auto">查看“LSF 基本使用”的源代码</span></h1>
+						<div id="bodyContent" class="mw-body-content">
+								<div id="contentSub">←<a href="http://hpc.ncpgr.cn:8093/mediawiki/index.php/LSF_基本使用" title="LSF 基本使用">LSF 基本使用</a></div>
+												<div id="jump-to-nav" class="mw-jump">
+					跳转至：					<a href="#mw-navigation">导航</a>、					<a href="#p-search">搜索</a>
+				</div>
+				<div id="mw-content-text"><p>因为以下原因，你没有权限编辑本页：
+</p>
+<div class="permissions-errors">
+<p>您请求的操作仅限属于该用户组的用户执行：<a href="http://hpc.ncpgr.cn:8093/mediawiki/index.php?title=Cluster:%E7%94%A8%E6%88%B7&amp;action=edit&amp;redlink=1" class="new" title="Cluster:用户（页面不存在）">用户</a>
+</p>
+</div>
+<hr />
+<p>您可以查看并复制此页面的源代码：
+</p><textarea readonly="" accesskey="," id="wpTextbox1" cols="80" rows="25" style="" lang="zh-cn" dir="ltr" name="wpTextbox1" class="mw-ui-input">LSF（Load Sharing Facility）是IBM旗下的一款分布式集群管理系统软件，负责计算资源的管理和批处理作业的调度。它给用户提供统一的集群资源访问接口，让用户透明地访问整个集群资源。同时提供了丰富的功能和可定制的策略。LSF 具有良好的可伸缩性和高可用性，支持几乎所有的主流操作系统。它通常是高性能计算环境中不可或缺的基础软件。作用上与PBS一样，使用方法略有不同。
+
+LSF的功能和命令非常多，这里主要介绍提交作业、查看作业、杀掉作业和资源查看四类。
+
+== 提交作业 ==
+
+===LSF命令行提交作业===
+与PBS不同，大部分情况下，可以不需要写作业脚本，直接一行命令就可以提交作业
+&lt;source lang="bash">
+
+bsub -J blast -n 10 -R span[hosts=1] -o %J.out -e %J.err -q normal "blastn -query ./ZS97_cds.fa -out ZS97_cds -db ./MH63_cds -outfmt 6 -evalue 1e-5 -num_threads \$LSB_DJOB_NUMPROC"
+&lt;/source>
+
+=== LSF作业脚本1-串行作业（单节点） ===
+
+LSF中用户运行作业的主要方式为，编写LSF作业脚本，使用bsub命令提交作业脚本。如下所示为使用LSF脚本blastn.lsf
+
+&lt;source lang="bash">
+#BSUB -J blast
+#BSUB -n 10
+#BSUB -R span[hosts=1]
+#BSUB -o %J.out
+#BSUB -e %J.err
+#BSUB -q normal
+time blastn -query ./ZS97_cds.fa -out ZS97_cds -db ./MH63_cds -outfmt 6 -evalue 1e-5 -num_threads $LSB_DJOB_NUMPROC
+&lt;/source>
+提交作业blastn.lsf
+
+&lt;source lang="bash">bsub &lt; blastn.lsf&lt;/source>
+脚本中每行内容解释 
+* -J 指定作业名称 
+* -n 作业使用核心数，LSF中一般称之为slot 
+* -R span[hosts=1] 指定作业只能在单个节点运行，不能夸节点（夸节点作业需要MPI支持，生物中比较少），-R  可以使得作业在需要满足某种条件的节点上运行 
+* -o 作业标准输出，%J为作业ID，即此处的作业输出文件为 jobid.out 
+* -e 作业错误输出，%J为作业ID，即此处的作业输出文件为 jobid.err 
+* -q 作业提交的作业队列
+$LSB_DJOB_NUMPROC 为LSF系统变量，表示作业脚本申请的CPU核心数
+
+
+另外还有一些常用选项
+* -M 指定申请的内存大小
+* -m 指定作业运行节点
+* -W hh:mm 设置作业运行时间
+* -w 作业依赖，方便写流程，如-w "done(JobA)"，作业名为JobA的作业完成之后，该作业才开始运行；[https://www.ibm.com/support/knowledgecenter/en/SSWRJV_10.1.0/lsf_admin/job_dep_sched.html 作业依赖详细用法]
+* -K 提交作业并等待作业结束，在写流程时会用得上，可以见后面的例子
+* -P 指定project name，如果我们需要统计某个项目消耗的计算资源，如CPU时等，可以将相关的作业都指定为同一个project name，然后根据project name统计资源消耗
+
+=== LSF作业脚本2-并行作业（多节点） ===
+&lt;source lang="bash">
+#BSUB -J MPIJob       	### set the job Name
+#BSUB -q normal        	### specify queue
+#BSUB -n 400           	### ask for number of cores (default: 1)
+#BSUB -R "span[ptile=20]"  	### ask for 20 cores per node
+#BSUB -W 10:00        	### set walltime limit: hh:mm
+#BSUB -o stdout_%J.out  	### Specify the output and error file. %J is the job-id 
+#BSUB -e stderr_%J.err  	### -o and -e mean append, -oo and -eo mean overwrite 
+
+# here follow the commands you want to execute
+
+# load the necessary modules
+# NOTE: this is just an example, check with the available modules
+module load intel/2018.4
+module load mpi/intel/2018.4
+
+### This uses the LSB_DJOB_NUMPROC to assign all the cores reserved
+### This is a very basic syntax. For more complex examples, see the documentation
+mpirun -np $LSB_DJOB_NUMPROC ./MPI_program
+&lt;/source>
+此脚本申请400核，每个节点20个核。
+
+多节点并行作业需要程序本身支持，使用mpirun等MPI命令运行，绝大部分生物软件不支持多节点并行。如不确定程序是否支持多节点并行，请勿使用，避免资源浪费。
+
+使用系统范围的intelmpi / openmpi时，可以省略-np $ LSB_DJOB_NUMPROC命令，因为程序会自动获取有关核心总数的信息。如果使用不同的MPI库，可能需要明确指定MPI的数量 以这种方式在命令行上进行处理。
+
+===LSF批量提交作业及注意事项===
+以跑多样本的STAR为例，将下面的脚本保存为run_STAR.sh，运行该脚本，即可同时提交一批作业，而不用一个个手动提交。如果对作业需要消耗的资源不是很清楚的用户，建议在提交批量作业前，先用交互模式跑一个，看看资源消耗情况，然后再合理申请资源，使用诸如-n 4 -M 20GB -R "rusage[mem=20GB]" 等选项，限制每个作业占用的资源，避免多个作业挤在一个节点，导致节点负载过高或内存耗尽而崩溃。
+&lt;source lang="bash">
+for sample in /public/home/test/haoliu/work/lsf_bwait/raw_data/*trim_1.fq.gz;do
+
+index=$(basename $sample |sed 's/_trim_1.fq.gz//')
+prefix=$(dirname $sample)
+ 
+star_index=/public/home/test/haoliu/work/lsf_bwait/star/
+gtf=/public/home/test/haoliu/work/lsf_bwait/MH63.gtf
+ 
+ 
+bsub  -J ${index} -n 8 -o %J.${index}.out -e %J.${index}.err -R span[hosts=1] \
+   "STAR --runThreadN 8 --genomeDir ${star_index} --readFilesIn ${prefix}/${index}_trim_1.fq.gz  ${prefix}/${index}_trim_2.fq.gz  --outFileNamePrefix ${index}. --sjdbGTFfile $gtf"
+sleep 10
+done
+
+&lt;/source>
+===LSF提交批量流程作业===
+生信中经常会遇到需要跑大量作业以及复杂流程的情况，特别是当流程中使用的软件为多线程和单线程混杂时，如果把所有流程步骤写到同一个shell脚本，并按多线程需要的线程数来申请CPU 核心数，无疑会造成比较大的浪费。
+
+在此建议将流程中的主要运行步骤直接用bsub提交，按需要申请核心数、内存等，需要用上文中提到的bsub的 -K 参数。这里写了一个跑RNA-Seq流程的example，主要是2个脚本，RNA.sh 为具体处理每个样本的流程脚本，在batch_run.sh 对每个样本都提交运行RNA.sh脚本。
+
+使用时，提交batch_run.lsf脚本即可, bsub &lt; batch_run.lsf 。
+
+RNA.sh
+&lt;source lang="bash">
+#!/bin/sh
+sample=$1
+
+index=$(basename $sample |sed 's/_trim_1.fq.gz//')
+prefix=$(dirname $sample)
+
+star_index=/public/home/test/haoliu/work/lsf_bwait/star/
+gtf=/public/home/test/haoliu/work/lsf_bwait/MH63.gtf
+
+
+bsub -K -J STAR1 -n 8 -o %J.STAR1.out -e %J.STAR1.err -R span[hosts=1] "module purge;module load STAR/2.6.0a-foss-2016b;STAR --runThreadN 8 --genomeDir ${star_index} \
+--readFilesIn ${prefix}/${index}_trim_1.fq.gz  ${prefix}/${index}_trim_2.fq.gz \
+--outSAMtype SAM --readFilesCommand zcat --alignIntronMax 50000 --outFileNamePrefix ${index}. --sjdbGTFfile $gtf  --outReadsUnmapped None"
+
+
+bsub -K -J STAR2 -n 1 -o %J.STAR2.out -e %J.STAR2.err -R span[hosts=1] "grep -E '@|NH:i:1' ${index}.Aligned.out.sam >${index}.Aligned.out.uniq.sam"
+
+bsub -K -J STAR3 -n 2 -o %J.STAR3.out -e %J.STAR3.err -R span[hosts=1] "module purge;module load SAMtools/1.3;samtools sort -@2  ${index}.Aligned.out.uniq.sam > ${index}.Aligned.out.bam"
+
+rm ${index}.Aligned.out.sam
+
+rm ${index}.Aligned.out.uniq.sam
+
+rm ${index}.Aligned.out.uniq.bam
+
+bsub -K -J STAR4 -n 1 -o %J.STAR4.out -e %J.STAR4.err -R span[hosts=1] "module purge;module load HTSeq/0.8.0;htseq-count -f bam -s no ${index}.Aligned.out.bam -t gene $gtf >${index}.Genecounts 2>${index}.htseq.log"
+&lt;/source>
+batch_run.lsf 
+&lt;source lang="bash">
+#BSUB -J STAR
+#BSUB -n 1
+#BSUB -R span[hosts=1]
+#BSUB -o %J.out
+#BSUB -e %J.err
+
+for sample in /public/home/test/haoliu/work/lsf_bwait/raw_data/*trim_1.fq.gz;do
+	index=$(basename $sample |sed 's/_trim_1.fq.gz//')
+	sh RNA.sh ${sample} &amp;
+        sleep 10
+done
+wait
+&lt;/source>
+=== LSF交互作业 ===
+类似于PBS中的qsub -I，为了防止滥用（开了之后长期不关等）交互模式，目前只允许在interactive队列使用交互模式，且时间限制为48h，超时会被杀掉。
+&lt;source lang="bash">
+bsub -q interactive -Is bash
+&lt;/source>
+也可以
+&lt;source lang="bash">
+bsub -q interactive -Is sh
+&lt;/source>
+此时不会加载~/.bashrc
+&lt;!--
+如果需要进行图形转发，如画图等，可以加-XF 参数
+&lt;source lang="bash">
+bsub -q interactive -XF -Is bash
+&lt;/source>
+-->
+
+== 查询作业 ==
+
+使用bjobs查看作业信息 [[文件:Lsf1.png|无]]
+可以查看作业的运行状态、队列、提交节点、运行节点及核心数、作业名称、提交时间，作业状态主要有: 
+* PEND 正在排队 
+* RUN 正在运行 
+* DONE 正常退出 
+* EXIT 异常退出 
+* SSUSP 被系统挂起 
+* USUSP 被用户自己挂起
+
+bjobs还有一些常用的选项，
+
+* -r 查看正在运行的作业
+* -pe 查看排队作业
+* -p 查看作业排队的原因 
+[[文件:Lsf2.png|无]]
+* -l 查看作业详细信息
+* -sum 查看所有未完成作业的汇总信息
+
+== 查询输出文件 ==
+
+在作业完成之前，输出文件out和error被保存在系统文件中无法查看，可以使用bpeek命令查看输出文件
+
+== 终止作业 ==
+
+如果用户要在作业提交后终止自己的作业，可以使用bkill命令，用法为bkill jobid。非root用户只能查看、删除自己提交的作业。
+
+== 资源查看 ==
+
+'''bhosts''' 查看所有节点核心数使用情况 
+[[文件:Lsf3.png|无]]
+
+* HOST_NAME 节点名称
+* STATUS：     ok：表示可以接收新作业，只有这种状态可以接受新作业     closed：表示已被作业占满，不接受新作业     unavail和unreach：系统停机或作业调度系统服务有问题
+* JL/U 每个用户在该节点最多能使用的核数，- 表示没有限制
+* MAX 最大可以同时运行的核数
+* NJOBS 当前所有运行和待运行作业所需的核数
+* RUN 已经开始运行的作业占据的核数
+* SSUSP 系统所挂起的作业所使用的核数
+* USUSP 用户自行挂起的作业所使用的核数
+* RSV 系统为你预约所保留的核数
+
+'''lsload''' 查看所有节点的负载、内存使用等 
+[[文件:Lsf4.png|无]]
+
+'''bqueue''' 查看队列信息 
+[[文件:Lsf5.png|无]]
+* -l 查看队列的详细信息 
+[[文件:Lsf6.png|无]]
+* -u 查看所用所能使用的队列
+* -m 查看节点所在的队列
+</textarea><div class="templatesUsed"></div><p id="mw-returnto">返回<a href="http://hpc.ncpgr.cn:8093/mediawiki/index.php/LSF_基本使用" title="LSF 基本使用">LSF 基本使用</a>。</p>
+</div>									<div class="printfooter">
+						取自“<a dir="ltr" href="http://hpc.ncpgr.cn:8093/mediawiki/index.php/LSF_基本使用">http://hpc.ncpgr.cn:8093/mediawiki/index.php/LSF_基本使用</a>”					</div>
+													<div id='catlinks' class='catlinks catlinks-allhidden'></div>												<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>导航菜单</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">个人工具</h3>
+						<ul>
+							<li id="pt-anonuserpage"><a href="http://hpc.ncpgr.cn:8093/mediawiki/index.php/用户:122.205.65.137" class="new" title="你用于编辑的IP地址的用户页面[.]" accesskey=".">122.205.65.137</a></li><li id="pt-anontalk"><a href="http://hpc.ncpgr.cn:8093/mediawiki/index.php/用户讨论:122.205.65.137" class="new" title="有关本IP地址的编辑的讨论[n]" accesskey="n">该IP地址的讨论</a></li><li id="pt-createaccount"><a href="http://hpc.ncpgr.cn:8093/mediawiki/index.php?title=%E7%89%B9%E6%AE%8A:%E7%94%A8%E6%88%B7%E7%99%BB%E5%BD%95&amp;returnto=LSF+%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8&amp;returntoquery=action%3Dedit&amp;type=signup">创建账户</a></li><li id="pt-login"><a href="http://hpc.ncpgr.cn:8093/mediawiki/index.php?title=%E7%89%B9%E6%AE%8A:%E7%94%A8%E6%88%B7%E7%99%BB%E5%BD%95&amp;returnto=LSF+%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8&amp;returntoquery=action%3Dedit" title="我们鼓励您登录，不过这不是强制的[o]" accesskey="o">登录</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">命名空间</h3>
+						<ul>
+															<li  id="ca-nstab-main" class="selected"><span><a href="http://hpc.ncpgr.cn:8093/mediawiki/index.php/LSF_基本使用"  title="查看内容页面[c]" accesskey="c">页面</a></span></li>
+															<li  id="ca-talk" class="new"><span><a href="http://hpc.ncpgr.cn:8093/mediawiki/index.php?title=%E8%AE%A8%E8%AE%BA:LSF_%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8&amp;action=edit&amp;redlink=1"  title="关于内容页面的讨论[t]" accesskey="t">讨论</a></span></li>
+													</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label"><span>变种</span><a href="#"></a></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">视图</h3>
+						<ul>
+															<li id="ca-view"><span><a href="http://hpc.ncpgr.cn:8093/mediawiki/index.php/LSF_基本使用" >阅读</a></span></li>
+															<li id="ca-viewsource" class="selected"><span><a href="http://hpc.ncpgr.cn:8093/mediawiki/index.php?title=LSF_%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8&amp;action=edit"  title="本页面受到保护。&#10;您可以查看其源代码[e]" accesskey="e">查看源代码</a></span></li>
+															<li id="ca-history" class="collapsible"><span><a href="http://hpc.ncpgr.cn:8093/mediawiki/index.php?title=LSF_%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8&amp;action=history"  title="本页面过去的版本[h]" accesskey="h">查看历史</a></span></li>
+													</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>更多</span><a href="#"></a></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">搜索</label>
+						</h3>
+
+						<form action="http://hpc.ncpgr.cn:8093/mediawiki/index.php" id="searchform">
+														<div id="simpleSearch">
+															<input type="search" name="search" placeholder="搜索" title="搜索作物遗传改良国家重点实验室集群系统[f]" accesskey="f" id="searchInput" /><input type="hidden" value="特殊:搜索" name="title" /><input type="submit" name="fulltext" value="搜索" title="搜索含这些文字的页面" id="mw-searchButton" class="searchButton mw-fallbackSearchButton" /><input type="submit" name="go" value="前往" title="如果相同的标题存在的话便直接前往该页面" id="searchButton" class="searchButton" />								</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a style="background-image: url(http://hpc.ncpgr.cn:8093/mediawiki/resources/assets/wiki.png);" href="http://hpc.ncpgr.cn:8093/mediawiki/index.php/首页"  title="访问首页"></a></div>
+						<div class="portal" role="navigation" id='p-navigation' aria-labelledby='p-navigation-label'>
+			<h3 id='p-navigation-label'>导航</h3>
+
+			<div class="body">
+									<ul>
+													<li id="n-mainpage-description"><a href="http://hpc.ncpgr.cn:8093/mediawiki/index.php/首页" title="访问首页[z]" accesskey="z">首页</a></li>
+													<li id="n-recentchanges"><a href="http://hpc.ncpgr.cn:8093/mediawiki/index.php/特殊:最近更改" title="本wiki最近更改的列表[r]" accesskey="r">最近更改</a></li>
+													<li id="n-randompage"><a href="http://hpc.ncpgr.cn:8093/mediawiki/index.php/特殊:随机页面" title="载入一个随机页面[x]" accesskey="x">随机页面</a></li>
+													<li id="n-help"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Contents" title="查找帮助的地方">帮助</a></li>
+											</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			<h3 id='p-tb-label'>工具</h3>
+
+			<div class="body">
+									<ul>
+													<li id="t-whatlinkshere"><a href="http://hpc.ncpgr.cn:8093/mediawiki/index.php/特殊:链入页面/LSF_基本使用" title="所有链接至本页面的wiki页面的列表[j]" accesskey="j">链入页面</a></li>
+													<li id="t-recentchangeslinked"><a href="http://hpc.ncpgr.cn:8093/mediawiki/index.php/特殊:相关更改/LSF_基本使用" title="链自本页的页面的最近更改[k]" accesskey="k">相关更改</a></li>
+													<li id="t-specialpages"><a href="http://hpc.ncpgr.cn:8093/mediawiki/index.php/特殊:特殊页面" title="所有特殊页面的列表[q]" accesskey="q">特殊页面</a></li>
+													<li id="t-info"><a href="http://hpc.ncpgr.cn:8093/mediawiki/index.php?title=LSF_%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8&amp;action=info">页面信息</a></li>
+											</ul>
+							</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="http://hpc.ncpgr.cn:8093/mediawiki/index.php/Cluster:隐私权政策" title="Cluster:隐私权政策">隐私政策</a></li>
+											<li id="footer-places-about"><a href="http://hpc.ncpgr.cn:8093/mediawiki/index.php/Cluster:关于" title="Cluster:关于">关于作物遗传改良国家重点实验室集群系统</a></li>
+											<li id="footer-places-disclaimer"><a href="http://hpc.ncpgr.cn:8093/mediawiki/index.php/Cluster:免责声明" title="Cluster:免责声明">免责声明</a></li>
+									</ul>
+									<div style="clear:both"></div>
+		</div>
+		<script>/*<![CDATA[*/window.jQuery && jQuery.ready();/*]]>*/</script><script>if(window.mw){
+mw.loader.state({"site":"loading","user":"ready","user.groups":"ready"});
+}</script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.action.edit.collapsibleFooter","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest"],null,true);
+}</script>
+<script>if(window.mw){
+document.write("\u003Cscript src=\"http://hpc.ncpgr.cn:8093/mediawiki/load.php?debug=false\u0026amp;lang=zh-cn\u0026amp;modules=site\u0026amp;only=scripts\u0026amp;skin=vector\u0026amp;*\"\u003E\u003C/script\u003E");
+}</script>
+<script>if(window.mw){
+mw.config.set({"wgBackendResponseTime":287});
+}</script>
+	</body>
+
+<!-- Mirrored from hpc.ncpgr.cn:8093/mediawiki/index.php?title=LSF_%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8&action=edit by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 13 May 2019 09:23:53 GMT -->
+</html>
+	

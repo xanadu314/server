@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="zh-CN" dir="ltr" class="client-nojs">
+
+<!-- Mirrored from hpc.ncpgr.cn:8093/mediawiki/index.php?title=LSF_%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8&printable=yes by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 13 May 2019 09:23:53 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="UTF-8" />
+<title>LSF 基本使用 - 作物遗传改良国家重点实验室集群系统</title>
+<meta name="generator" content="MediaWiki 1.24.1" />
+<meta name="robots" content="noindex,follow" />
+<link rel="shortcut icon" href="../favicon.html" />
+<link rel="search" type="application/opensearchdescription+xml" href="opensearch_desc.php" title="作物遗传改良国家重点实验室集群系统 (zh-cn)" />
+<link rel="EditURI" type="application/rsd+xml" href="api251f.php?action=rsd" />
+<link rel="alternate" hreflang="x-default" href="index.php/LSF_%e5%9f%ba%e6%9c%ac%e4%bd%bf%e7%94%a8.html" />
+<link rel="alternate" type="application/atom+xml" title="作物遗传改良国家重点实验室集群系统的Atom feed" href="apidf90.php?title=%E7%89%B9%E6%AE%8A:%E6%9C%80%E8%BF%91%E6%9B%B4%E6%94%B9&amp;feed=atom" />
+<link rel="stylesheet" href="loade397.css?debug=false&amp;lang=zh-cn&amp;modules=ext.geshi.language.bash%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.skinning.interface%7Cmediawiki.ui.button%7Cskins.vector.styles&amp;only=styles&amp;printable=1&amp;skin=vector&amp;*" />
+<meta name="ResourceLoaderDynamicStyles" content="" />
+<link rel="stylesheet" href="load853d.css?debug=false&amp;lang=zh-cn&amp;modules=site&amp;only=styles&amp;printable=1&amp;skin=vector&amp;*" />
+<style>a:lang(ar),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}
+/* cache key: wiki-wiki:resourceloader:filter:minify-css:7:fa3f35a35ca6833c3a136d86b661109f */</style>
+<script src="loadb23b.php?debug=false&amp;lang=zh-cn&amp;modules=startup&amp;only=scripts&amp;printable=1&amp;skin=vector&amp;*"></script>
+<script>if(window.mw){
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"LSF_基本使用","wgTitle":"LSF 基本使用","wgCurRevisionId":380,"wgRevisionId":380,"wgArticleId":85,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"zh-cn","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"zh","wgMonthNames":["","1月","2月","3月","4月","5月","6月","7月","8月","9月","10月","11月","12月"],"wgMonthNamesShort":["","1月","2月","3月","4月","5月","6月","7月","8月","9月","10月","11月","12月"],"wgRelevantPageName":"LSF_基本使用","wgIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgWikiEditorEnabledModules":{"toolbar":true,"dialogs":true,"hidesig":true,"preview":true,"previewDialog":false,"publish":true}});
+}</script><script>if(window.mw){
+mw.loader.implement("user.options",function($,jQuery){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"editfont":"default","editondblclick":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":1,"extendwatchlist":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nickname":"","norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"rcdays":7,"rclimit":50,"rows":25,"showhiddencats":0,"shownumberswatching":1,"showtoolbar":1,"skin":"vector","stubthreshold":0,"thumbsize":5,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":1,"watchdefault":1,"watchdeletion":0,"watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"watchrollback":0,
+"wllimit":250,"useeditwarning":1,"prefershttps":1,"usebetatoolbar":1,"usebetatoolbar-cgd":1,"wikieditor-preview":1,"wikieditor-publish":1,"language":"zh-cn","variant-gan":"gan","variant-iu":"iu","variant-kk":"kk","variant-ku":"ku","variant-shi":"shi","variant-sr":"sr","variant-tg":"tg","variant-uz":"uz","variant-zh":"zh","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"variant":"zh-cn"});},{},{});mw.loader.implement("user.tokens",function($,jQuery){mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\"});},{},{});
+/* cache key: wiki-wiki:resourceloader:filter:minify-js:7:01a64f4f54c00905cdabe1083f478124 */
+}</script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.legacy.ajax","skins.vector.js"]);
+}</script>
+<!--[if lt IE 7]><style type="text/css">body{behavior:url("/mediawiki/skins/Vector/csshover.min.htc")}</style><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-LSF_基本使用 skin-vector action-view vector-animateLayout">
+		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+
+						<h1 id="firstHeading" class="firstHeading" lang="zh-CN"><span dir="auto">LSF 基本使用</span></h1>
+						<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub">来自作物遗传改良国家重点实验室集群系统</div>
+								<div id="contentSub"></div>
+												<div id="jump-to-nav" class="mw-jump">
+					跳转至：					<a href="#mw-navigation">导航</a>、					<a href="#p-search">搜索</a>
+				</div>
+				<div id="mw-content-text" lang="zh-CN" dir="ltr" class="mw-content-ltr"><p>LSF（Load Sharing Facility）是IBM旗下的一款分布式集群管理系统软件，负责计算资源的管理和批处理作业的调度。它给用户提供统一的集群资源访问接口，让用户透明地访问整个集群资源。同时提供了丰富的功能和可定制的策略。LSF 具有良好的可伸缩性和高可用性，支持几乎所有的主流操作系统。它通常是高性能计算环境中不可或缺的基础软件。作用上与PBS一样，使用方法略有不同。
+</p><p>LSF的功能和命令非常多，这里主要介绍提交作业、查看作业、杀掉作业和资源查看四类。
+</p>
+<div id="toc" class="toc"><div id="toctitle"><h2>目录</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#.E6.8F.90.E4.BA.A4.E4.BD.9C.E4.B8.9A"><span class="tocnumber">1</span> <span class="toctext">提交作业</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#LSF.E5.91.BD.E4.BB.A4.E8.A1.8C.E6.8F.90.E4.BA.A4.E4.BD.9C.E4.B8.9A"><span class="tocnumber">1.1</span> <span class="toctext">LSF命令行提交作业</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#LSF.E4.BD.9C.E4.B8.9A.E8.84.9A.E6.9C.AC1-.E4.B8.B2.E8.A1.8C.E4.BD.9C.E4.B8.9A.EF.BC.88.E5.8D.95.E8.8A.82.E7.82.B9.EF.BC.89"><span class="tocnumber">1.2</span> <span class="toctext">LSF作业脚本1-串行作业（单节点）</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#LSF.E4.BD.9C.E4.B8.9A.E8.84.9A.E6.9C.AC2-.E5.B9.B6.E8.A1.8C.E4.BD.9C.E4.B8.9A.EF.BC.88.E5.A4.9A.E8.8A.82.E7.82.B9.EF.BC.89"><span class="tocnumber">1.3</span> <span class="toctext">LSF作业脚本2-并行作业（多节点）</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#LSF.E6.89.B9.E9.87.8F.E6.8F.90.E4.BA.A4.E4.BD.9C.E4.B8.9A.E5.8F.8A.E6.B3.A8.E6.84.8F.E4.BA.8B.E9.A1.B9"><span class="tocnumber">1.4</span> <span class="toctext">LSF批量提交作业及注意事项</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#LSF.E6.8F.90.E4.BA.A4.E6.89.B9.E9.87.8F.E6.B5.81.E7.A8.8B.E4.BD.9C.E4.B8.9A"><span class="tocnumber">1.5</span> <span class="toctext">LSF提交批量流程作业</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#LSF.E4.BA.A4.E4.BA.92.E4.BD.9C.E4.B8.9A"><span class="tocnumber">1.6</span> <span class="toctext">LSF交互作业</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-8"><a href="#.E6.9F.A5.E8.AF.A2.E4.BD.9C.E4.B8.9A"><span class="tocnumber">2</span> <span class="toctext">查询作业</span></a></li>
+<li class="toclevel-1 tocsection-9"><a href="#.E6.9F.A5.E8.AF.A2.E8.BE.93.E5.87.BA.E6.96.87.E4.BB.B6"><span class="tocnumber">3</span> <span class="toctext">查询输出文件</span></a></li>
+<li class="toclevel-1 tocsection-10"><a href="#.E7.BB.88.E6.AD.A2.E4.BD.9C.E4.B8.9A"><span class="tocnumber">4</span> <span class="toctext">终止作业</span></a></li>
+<li class="toclevel-1 tocsection-11"><a href="#.E8.B5.84.E6.BA.90.E6.9F.A5.E7.9C.8B"><span class="tocnumber">5</span> <span class="toctext">资源查看</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id=".E6.8F.90.E4.BA.A4.E4.BD.9C.E4.B8.9A">提交作业</span></h2>
+<h3><span class="mw-headline" id="LSF.E5.91.BD.E4.BB.A4.E8.A1.8C.E6.8F.90.E4.BA.A4.E4.BD.9C.E4.B8.9A">LSF命令行提交作业</span></h3>
+<p>与PBS不同，大部分情况下，可以不需要写作业脚本，直接一行命令就可以提交作业
+</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="bash source-bash"><pre class="de1">bsub <span class="re5">-J</span> blast <span class="re5">-n</span> <span class="nu0">10</span> <span class="re5">-R</span> span<span class="br0">&#91;</span><span class="re2">hosts</span>=<span class="nu0">1</span><span class="br0">&#93;</span> <span class="re5">-o</span> <span class="sy0">%</span>J.out <span class="re5">-e</span> <span class="sy0">%</span>J.err -q normal <span class="st0">&quot;blastn -query ./ZS97_cds.fa -out ZS97_cds -db ./MH63_cds -outfmt 6 -evalue 1e-5 -num_threads <span class="es1">\$</span>LSB_DJOB_NUMPROC&quot;</span></pre></div></div>
+<h3><span class="mw-headline" id="LSF.E4.BD.9C.E4.B8.9A.E8.84.9A.E6.9C.AC1-.E4.B8.B2.E8.A1.8C.E4.BD.9C.E4.B8.9A.EF.BC.88.E5.8D.95.E8.8A.82.E7.82.B9.EF.BC.89">LSF作业脚本1-串行作业（单节点）</span></h3>
+<p>LSF中用户运行作业的主要方式为，编写LSF作业脚本，使用bsub命令提交作业脚本。如下所示为使用LSF脚本blastn.lsf
+</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="bash source-bash"><pre class="de1"><span class="co0">#BSUB -J blast</span>
+<span class="co0">#BSUB -n 10</span>
+<span class="co0">#BSUB -R span[hosts=1]</span>
+<span class="co0">#BSUB -o&#160;%J.out</span>
+<span class="co0">#BSUB -e&#160;%J.err</span>
+<span class="co0">#BSUB -q normal</span>
+<span class="kw1">time</span> blastn <span class="re5">-query</span> .<span class="sy0">/</span>ZS97_cds.fa <span class="re5">-out</span> ZS97_cds <span class="re5">-db</span> .<span class="sy0">/</span>MH63_cds <span class="re5">-outfmt</span> <span class="nu0">6</span> <span class="re5">-evalue</span> 1e-5 -num_threads <span class="re1">$LSB_DJOB_NUMPROC</span></pre></div></div>
+<p>提交作业blastn.lsf
+</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="bash source-bash"><pre class="de1">bsub <span class="sy0">&lt;</span> blastn.lsf</pre></div></div>
+<p>脚本中每行内容解释 
+</p>
+<ul><li> -J 指定作业名称 </li>
+<li> -n 作业使用核心数，LSF中一般称之为slot </li>
+<li> -R span[hosts=1] 指定作业只能在单个节点运行，不能夸节点（夸节点作业需要MPI支持，生物中比较少），-R  可以使得作业在需要满足某种条件的节点上运行 </li>
+<li> -o 作业标准输出，%J为作业ID，即此处的作业输出文件为 jobid.out </li>
+<li> -e 作业错误输出，%J为作业ID，即此处的作业输出文件为 jobid.err </li>
+<li> -q 作业提交的作业队列</li></ul>
+<p>$LSB_DJOB_NUMPROC 为LSF系统变量，表示作业脚本申请的CPU核心数
+</p><p><br />
+另外还有一些常用选项
+</p>
+<ul><li> -M 指定申请的内存大小</li>
+<li> -m 指定作业运行节点</li>
+<li> -W hh:mm 设置作业运行时间</li>
+<li> -w 作业依赖，方便写流程，如-w "done(JobA)"，作业名为JobA的作业完成之后，该作业才开始运行；<a rel="nofollow" class="external text" href="https://www.ibm.com/support/knowledgecenter/en/SSWRJV_10.1.0/lsf_admin/job_dep_sched.html">作业依赖详细用法</a></li>
+<li> -K 提交作业并等待作业结束，在写流程时会用得上，可以见后面的例子</li>
+<li> -P 指定project name，如果我们需要统计某个项目消耗的计算资源，如CPU时等，可以将相关的作业都指定为同一个project name，然后根据project name统计资源消耗</li></ul>
+<h3><span class="mw-headline" id="LSF.E4.BD.9C.E4.B8.9A.E8.84.9A.E6.9C.AC2-.E5.B9.B6.E8.A1.8C.E4.BD.9C.E4.B8.9A.EF.BC.88.E5.A4.9A.E8.8A.82.E7.82.B9.EF.BC.89">LSF作业脚本2-并行作业（多节点）</span></h3>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="bash source-bash"><pre class="de1"><span class="co0">#BSUB -J MPIJob       	### set the job Name</span>
+<span class="co0">#BSUB -q normal        	### specify queue</span>
+<span class="co0">#BSUB -n 400           	### ask for number of cores (default: 1)</span>
+<span class="co0">#BSUB -R &quot;span[ptile=20]&quot;  	### ask for 20 cores per node</span>
+<span class="co0">#BSUB -W 10:00        	### set walltime limit: hh:mm</span>
+<span class="co0">#BSUB -o stdout_%J.out  	### Specify the output and error file.&#160;%J is the job-id </span>
+<span class="co0">#BSUB -e stderr_%J.err  	### -o and -e mean append, -oo and -eo mean overwrite </span>
+&#160;
+<span class="co0"># here follow the commands you want to execute</span>
+&#160;
+<span class="co0"># load the necessary modules</span>
+<span class="co0"># NOTE: this is just an example, check with the available modules</span>
+module load intel<span class="sy0">/</span><span class="nu0">2018.4</span>
+module load mpi<span class="sy0">/</span>intel<span class="sy0">/</span><span class="nu0">2018.4</span>
+&#160;
+<span class="co0">### This uses the LSB_DJOB_NUMPROC to assign all the cores reserved</span>
+<span class="co0">### This is a very basic syntax. For more complex examples, see the documentation</span>
+mpirun <span class="re5">-np</span> <span class="re1">$LSB_DJOB_NUMPROC</span> .<span class="sy0">/</span>MPI_program</pre></div></div>
+<p>此脚本申请400核，每个节点20个核。
+</p><p>多节点并行作业需要程序本身支持，使用mpirun等MPI命令运行，绝大部分生物软件不支持多节点并行。如不确定程序是否支持多节点并行，请勿使用，避免资源浪费。
+</p><p>使用系统范围的intelmpi / openmpi时，可以省略-np $ LSB_DJOB_NUMPROC命令，因为程序会自动获取有关核心总数的信息。如果使用不同的MPI库，可能需要明确指定MPI的数量 以这种方式在命令行上进行处理。
+</p>
+<h3><span class="mw-headline" id="LSF.E6.89.B9.E9.87.8F.E6.8F.90.E4.BA.A4.E4.BD.9C.E4.B8.9A.E5.8F.8A.E6.B3.A8.E6.84.8F.E4.BA.8B.E9.A1.B9">LSF批量提交作业及注意事项</span></h3>
+<p>以跑多样本的STAR为例，将下面的脚本保存为run_STAR.sh，运行该脚本，即可同时提交一批作业，而不用一个个手动提交。如果对作业需要消耗的资源不是很清楚的用户，建议在提交批量作业前，先用交互模式跑一个，看看资源消耗情况，然后再合理申请资源，使用诸如-n 4 -M 20GB -R "rusage[mem=20GB]" 等选项，限制每个作业占用的资源，避免多个作业挤在一个节点，导致节点负载过高或内存耗尽而崩溃。
+</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="bash source-bash"><pre class="de1"><span class="kw1">for</span> sample <span class="kw1">in</span> <span class="sy0">/</span>public<span class="sy0">/</span>home<span class="sy0">/</span>test<span class="sy0">/</span>haoliu<span class="sy0">/</span>work<span class="sy0">/</span>lsf_bwait<span class="sy0">/</span>raw_data<span class="sy0">/*</span>trim_1.fq.gz;<span class="kw1">do</span>
+&#160;
+<span class="re2">index</span>=$<span class="br0">&#40;</span><span class="kw2">basename</span> <span class="re1">$sample</span> <span class="sy0">|</span><span class="kw2">sed</span> <span class="st_h">'s/_trim_1.fq.gz//'</span><span class="br0">&#41;</span>
+<span class="re2">prefix</span>=$<span class="br0">&#40;</span><span class="kw2">dirname</span> <span class="re1">$sample</span><span class="br0">&#41;</span>
+&#160;
+<span class="re2">star_index</span>=<span class="sy0">/</span>public<span class="sy0">/</span>home<span class="sy0">/</span>test<span class="sy0">/</span>haoliu<span class="sy0">/</span>work<span class="sy0">/</span>lsf_bwait<span class="sy0">/</span>star<span class="sy0">/</span>
+<span class="re2">gtf</span>=<span class="sy0">/</span>public<span class="sy0">/</span>home<span class="sy0">/</span>test<span class="sy0">/</span>haoliu<span class="sy0">/</span>work<span class="sy0">/</span>lsf_bwait<span class="sy0">/</span>MH63.gtf
+&#160;
+&#160;
+bsub  <span class="re5">-J</span> <span class="co1">${index}</span> <span class="re5">-n</span> <span class="nu0">8</span> <span class="re5">-o</span> <span class="sy0">%</span>J.<span class="co1">${index}</span>.out <span class="re5">-e</span> <span class="sy0">%</span>J.<span class="co1">${index}</span>.err <span class="re5">-R</span> span<span class="br0">&#91;</span><span class="re2">hosts</span>=<span class="nu0">1</span><span class="br0">&#93;</span> \
+   <span class="st0">&quot;STAR --runThreadN 8 --genomeDir <span class="es3">${star_index}</span> --readFilesIn <span class="es3">${prefix}</span>/<span class="es3">${index}</span>_trim_1.fq.gz  <span class="es3">${prefix}</span>/<span class="es3">${index}</span>_trim_2.fq.gz  --outFileNamePrefix <span class="es3">${index}</span>. --sjdbGTFfile <span class="es2">$gtf</span>&quot;</span>
+<span class="kw2">sleep</span> <span class="nu0">10</span>
+<span class="kw1">done</span></pre></div></div>
+<h3><span class="mw-headline" id="LSF.E6.8F.90.E4.BA.A4.E6.89.B9.E9.87.8F.E6.B5.81.E7.A8.8B.E4.BD.9C.E4.B8.9A">LSF提交批量流程作业</span></h3>
+<p>生信中经常会遇到需要跑大量作业以及复杂流程的情况，特别是当流程中使用的软件为多线程和单线程混杂时，如果把所有流程步骤写到同一个shell脚本，并按多线程需要的线程数来申请CPU 核心数，无疑会造成比较大的浪费。
+</p><p>在此建议将流程中的主要运行步骤直接用bsub提交，按需要申请核心数、内存等，需要用上文中提到的bsub的 -K 参数。这里写了一个跑RNA-Seq流程的example，主要是2个脚本，RNA.sh 为具体处理每个样本的流程脚本，在batch_run.sh 对每个样本都提交运行RNA.sh脚本。
+</p><p>使用时，提交batch_run.lsf脚本即可, bsub &lt; batch_run.lsf 。
+</p><p>RNA.sh
+</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="bash source-bash"><pre class="de1"><span class="co0">#!/bin/sh</span>
+<span class="re2">sample</span>=<span class="re4">$1</span>
+&#160;
+<span class="re2">index</span>=$<span class="br0">&#40;</span><span class="kw2">basename</span> <span class="re1">$sample</span> <span class="sy0">|</span><span class="kw2">sed</span> <span class="st_h">'s/_trim_1.fq.gz//'</span><span class="br0">&#41;</span>
+<span class="re2">prefix</span>=$<span class="br0">&#40;</span><span class="kw2">dirname</span> <span class="re1">$sample</span><span class="br0">&#41;</span>
+&#160;
+<span class="re2">star_index</span>=<span class="sy0">/</span>public<span class="sy0">/</span>home<span class="sy0">/</span>test<span class="sy0">/</span>haoliu<span class="sy0">/</span>work<span class="sy0">/</span>lsf_bwait<span class="sy0">/</span>star<span class="sy0">/</span>
+<span class="re2">gtf</span>=<span class="sy0">/</span>public<span class="sy0">/</span>home<span class="sy0">/</span>test<span class="sy0">/</span>haoliu<span class="sy0">/</span>work<span class="sy0">/</span>lsf_bwait<span class="sy0">/</span>MH63.gtf
+&#160;
+&#160;
+bsub <span class="re5">-K</span> <span class="re5">-J</span> STAR1 <span class="re5">-n</span> <span class="nu0">8</span> <span class="re5">-o</span> <span class="sy0">%</span>J.STAR1.out <span class="re5">-e</span> <span class="sy0">%</span>J.STAR1.err <span class="re5">-R</span> span<span class="br0">&#91;</span><span class="re2">hosts</span>=<span class="nu0">1</span><span class="br0">&#93;</span> <span class="st0">&quot;module purge;module load STAR/2.6.0a-foss-2016b;STAR --runThreadN 8 --genomeDir <span class="es3">${star_index}</span> <span class="es1">\
+</span>--readFilesIn <span class="es3">${prefix}</span>/<span class="es3">${index}</span>_trim_1.fq.gz  <span class="es3">${prefix}</span>/<span class="es3">${index}</span>_trim_2.fq.gz <span class="es1">\
+</span>--outSAMtype SAM --readFilesCommand zcat --alignIntronMax 50000 --outFileNamePrefix <span class="es3">${index}</span>. --sjdbGTFfile <span class="es2">$gtf</span>  --outReadsUnmapped None&quot;</span>
+&#160;
+&#160;
+bsub <span class="re5">-K</span> <span class="re5">-J</span> STAR2 <span class="re5">-n</span> <span class="nu0">1</span> <span class="re5">-o</span> <span class="sy0">%</span>J.STAR2.out <span class="re5">-e</span> <span class="sy0">%</span>J.STAR2.err <span class="re5">-R</span> span<span class="br0">&#91;</span><span class="re2">hosts</span>=<span class="nu0">1</span><span class="br0">&#93;</span> <span class="st0">&quot;grep -E '@|NH:i:1' <span class="es3">${index}</span>.Aligned.out.sam &gt;<span class="es3">${index}</span>.Aligned.out.uniq.sam&quot;</span>
+&#160;
+bsub <span class="re5">-K</span> <span class="re5">-J</span> STAR3 <span class="re5">-n</span> <span class="nu0">2</span> <span class="re5">-o</span> <span class="sy0">%</span>J.STAR3.out <span class="re5">-e</span> <span class="sy0">%</span>J.STAR3.err <span class="re5">-R</span> span<span class="br0">&#91;</span><span class="re2">hosts</span>=<span class="nu0">1</span><span class="br0">&#93;</span> <span class="st0">&quot;module purge;module load SAMtools/1.3;samtools sort -@2  <span class="es3">${index}</span>.Aligned.out.uniq.sam &gt; <span class="es3">${index}</span>.Aligned.out.bam&quot;</span>
+&#160;
+<span class="kw2">rm</span> <span class="co1">${index}</span>.Aligned.out.sam
+&#160;
+<span class="kw2">rm</span> <span class="co1">${index}</span>.Aligned.out.uniq.sam
+&#160;
+<span class="kw2">rm</span> <span class="co1">${index}</span>.Aligned.out.uniq.bam
+&#160;
+bsub <span class="re5">-K</span> <span class="re5">-J</span> STAR4 <span class="re5">-n</span> <span class="nu0">1</span> <span class="re5">-o</span> <span class="sy0">%</span>J.STAR4.out <span class="re5">-e</span> <span class="sy0">%</span>J.STAR4.err <span class="re5">-R</span> span<span class="br0">&#91;</span><span class="re2">hosts</span>=<span class="nu0">1</span><span class="br0">&#93;</span> <span class="st0">&quot;module purge;module load HTSeq/0.8.0;htseq-count -f bam -s no <span class="es3">${index}</span>.Aligned.out.bam -t gene <span class="es2">$gtf</span> &gt;<span class="es3">${index}</span>.Genecounts 2&gt;<span class="es3">${index}</span>.htseq.log&quot;</span></pre></div></div>
+<p>batch_run.lsf 
+</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="bash source-bash"><pre class="de1"><span class="co0">#BSUB -J STAR</span>
+<span class="co0">#BSUB -n 1</span>
+<span class="co0">#BSUB -R span[hosts=1]</span>
+<span class="co0">#BSUB -o&#160;%J.out</span>
+<span class="co0">#BSUB -e&#160;%J.err</span>
+&#160;
+<span class="kw1">for</span> sample <span class="kw1">in</span> <span class="sy0">/</span>public<span class="sy0">/</span>home<span class="sy0">/</span>test<span class="sy0">/</span>haoliu<span class="sy0">/</span>work<span class="sy0">/</span>lsf_bwait<span class="sy0">/</span>raw_data<span class="sy0">/*</span>trim_1.fq.gz;<span class="kw1">do</span>
+	<span class="re2">index</span>=$<span class="br0">&#40;</span><span class="kw2">basename</span> <span class="re1">$sample</span> <span class="sy0">|</span><span class="kw2">sed</span> <span class="st_h">'s/_trim_1.fq.gz//'</span><span class="br0">&#41;</span>
+	<span class="kw2">sh</span> RNA.sh <span class="co1">${sample}</span> <span class="sy0">&amp;</span>
+        <span class="kw2">sleep</span> <span class="nu0">10</span>
+<span class="kw1">done</span>
+<span class="kw3">wait</span></pre></div></div>
+<h3><span class="mw-headline" id="LSF.E4.BA.A4.E4.BA.92.E4.BD.9C.E4.B8.9A">LSF交互作业</span></h3>
+<p>类似于PBS中的qsub -I，为了防止滥用（开了之后长期不关等）交互模式，目前只允许在interactive队列使用交互模式，且时间限制为48h，超时会被杀掉。
+</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="bash source-bash"><pre class="de1">bsub <span class="re5">-q</span> interactive <span class="re5">-Is</span> <span class="kw2">bash</span></pre></div></div>
+<p>也可以
+</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="bash source-bash"><pre class="de1">bsub <span class="re5">-q</span> interactive <span class="re5">-Is</span> <span class="kw2">sh</span></pre></div></div>
+<p>此时不会加载~/.bashrc
+</p>
+<h2><span class="mw-headline" id=".E6.9F.A5.E8.AF.A2.E4.BD.9C.E4.B8.9A">查询作业</span></h2>
+使用bjobs查看作业信息 <div class="floatnone"><a href="index.php/%e6%96%87%e4%bb%b6_Lsf1.html" class="image"><img alt="Lsf1.png" src="images/0/02/Lsf1.png" width="1331" height="224" /></a></div>
+<p>可以查看作业的运行状态、队列、提交节点、运行节点及核心数、作业名称、提交时间，作业状态主要有: 
+</p>
+<ul><li> PEND 正在排队 </li>
+<li> RUN 正在运行 </li>
+<li> DONE 正常退出 </li>
+<li> EXIT 异常退出 </li>
+<li> SSUSP 被系统挂起 </li>
+<li> USUSP 被用户自己挂起</li></ul>
+<p>bjobs还有一些常用的选项，
+</p>
+<ul><li> -r 查看正在运行的作业</li>
+<li> -pe 查看排队作业</li>
+<li> -p 查看作业排队的原因 </li></ul>
+<div class="floatnone"><a href="index.php/%e6%96%87%e4%bb%b6_Lsf2.html" class="image"><img alt="Lsf2.png" src="images/d/d4/Lsf2.png" width="992" height="729" /></a></div>
+<ul><li> -l 查看作业详细信息</li>
+<li> -sum 查看所有未完成作业的汇总信息</li></ul>
+<h2><span class="mw-headline" id=".E6.9F.A5.E8.AF.A2.E8.BE.93.E5.87.BA.E6.96.87.E4.BB.B6">查询输出文件</span></h2>
+<p>在作业完成之前，输出文件out和error被保存在系统文件中无法查看，可以使用bpeek命令查看输出文件
+</p>
+<h2><span class="mw-headline" id=".E7.BB.88.E6.AD.A2.E4.BD.9C.E4.B8.9A">终止作业</span></h2>
+<p>如果用户要在作业提交后终止自己的作业，可以使用bkill命令，用法为bkill jobid。非root用户只能查看、删除自己提交的作业。
+</p>
+<h2><span class="mw-headline" id=".E8.B5.84.E6.BA.90.E6.9F.A5.E7.9C.8B">资源查看</span></h2>
+<p><b>bhosts</b> 查看所有节点核心数使用情况 
+</p>
+<div class="floatnone"><a href="index.php/%e6%96%87%e4%bb%b6_Lsf3.html" class="image"><img alt="Lsf3.png" src="images/2/2b/Lsf3.png" width="1274" height="746" /></a></div>
+<ul><li> HOST_NAME 节点名称</li>
+<li> STATUS：     ok：表示可以接收新作业，只有这种状态可以接受新作业     closed：表示已被作业占满，不接受新作业     unavail和unreach：系统停机或作业调度系统服务有问题</li>
+<li> JL/U 每个用户在该节点最多能使用的核数，- 表示没有限制</li>
+<li> MAX 最大可以同时运行的核数</li>
+<li> NJOBS 当前所有运行和待运行作业所需的核数</li>
+<li> RUN 已经开始运行的作业占据的核数</li>
+<li> SSUSP 系统所挂起的作业所使用的核数</li>
+<li> USUSP 用户自行挂起的作业所使用的核数</li>
+<li> RSV 系统为你预约所保留的核数</li></ul>
+<p><b>lsload</b> 查看所有节点的负载、内存使用等 
+</p>
+<div class="floatnone"><a href="index.php/%e6%96%87%e4%bb%b6_Lsf4.html" class="image"><img alt="Lsf4.png" src="images/f/ff/Lsf4.png" width="1280" height="592" /></a></div>
+<p><b>bqueue</b> 查看队列信息 
+</p>
+<div class="floatnone"><a href="index.php/%e6%96%87%e4%bb%b6_Lsf5.html" class="image"><img alt="Lsf5.png" src="images/b/b5/Lsf5.png" width="1279" height="256" /></a></div>
+<ul><li> -l 查看队列的详细信息 </li></ul>
+<div class="floatnone"><a href="index.php/%e6%96%87%e4%bb%b6_Lsf6.html" class="image"><img alt="Lsf6.png" src="images/4/43/Lsf6.png" width="1380" height="626" /></a></div>
+<ul><li> -u 查看所用所能使用的队列</li>
+<li> -m 查看节点所在的队列</li></ul>
+
+<!-- 
+NewPP limit report
+CPU time usage: 0.319 seconds
+Real time usage: 0.984 seconds
+Preprocessor visited node count: 126/1000000
+Preprocessor generated node count: 232/1000000
+Post‐expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+-->
+
+<!-- Saved in parser cache with key wiki-wiki:pcache:idhash:85-0!*!*!!zh-cn!5!* and timestamp 20190512121813 and revision id 380
+ -->
+</div>									<div class="printfooter">
+						取自“<a dir="ltr" href="indexe2d3.html?title=LSF_%e5%9f%ba%e6%9c%ac%e4%bd%bf%e7%94%a8&amp;oldid=380">http://hpc.ncpgr.cn:8093/mediawiki/index.php?title=LSF_基本使用&amp;oldid=380</a>”					</div>
+													<div id='catlinks' class='catlinks catlinks-allhidden'></div>												<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>导航菜单</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">个人工具</h3>
+						<ul>
+							<li id="pt-anonuserpage"><a href="index.php/%e7%94%a8%e6%88%b7_122.205.65.html" class="new" title="你用于编辑的IP地址的用户页面[.]" accesskey=".">122.205.65.137</a></li><li id="pt-anontalk"><a href="index.php/%e7%94%a8%e6%88%b7%e8%ae%a8%e8%ae%ba_122.205.65.html" class="new" title="有关本IP地址的编辑的讨论[n]" accesskey="n">该IP地址的讨论</a></li><li id="pt-createaccount"><a href="index0b60.html?title=%E7%89%B9%E6%AE%8A:%E7%94%A8%E6%88%B7%E7%99%BB%E5%BD%95&amp;returnto=LSF+%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8&amp;returntoquery=printable%3Dyes&amp;type=signup">创建账户</a></li><li id="pt-login"><a href="index2fd0.html?title=%E7%89%B9%E6%AE%8A:%E7%94%A8%E6%88%B7%E7%99%BB%E5%BD%95&amp;returnto=LSF+%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8&amp;returntoquery=printable%3Dyes" title="我们鼓励您登录，不过这不是强制的[o]" accesskey="o">登录</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">命名空间</h3>
+						<ul>
+															<li  id="ca-nstab-main" class="selected"><span><a href="index.php/LSF_%e5%9f%ba%e6%9c%ac%e4%bd%bf%e7%94%a8.html"  title="查看内容页面[c]" accesskey="c">页面</a></span></li>
+															<li  id="ca-talk" class="new"><span><a href="index.php/%e8%ae%a8%e8%ae%ba_LSF_%e5%9f%ba%e6%9c%ac%e4%bd%bf%e7%94%a8.html?title=%E8%AE%A8%E8%AE%BA:LSF_%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8&amp;action=edit&amp;redlink=1"  title="关于内容页面的讨论[t]" accesskey="t">讨论</a></span></li>
+													</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label"><span>变种</span><a href="#"></a></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">视图</h3>
+						<ul>
+															<li id="ca-view" class="selected"><span><a href="index.php/LSF_%e5%9f%ba%e6%9c%ac%e4%bd%bf%e7%94%a8.html" >阅读</a></span></li>
+															<li id="ca-viewsource"><span><a href="index2bd2.html?title=LSF_%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8&amp;action=edit"  title="本页面受到保护。&#10;您可以查看其源代码[e]" accesskey="e">查看源代码</a></span></li>
+															<li id="ca-history" class="collapsible"><span><a href="index2674.html?title=LSF_%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8&amp;action=history"  title="本页面过去的版本[h]" accesskey="h">查看历史</a></span></li>
+													</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>更多</span><a href="#"></a></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">搜索</label>
+						</h3>
+
+						<form action="http://hpc.ncpgr.cn:8093/mediawiki/index.php" id="searchform">
+														<div id="simpleSearch">
+															<input type="search" name="search" placeholder="搜索" title="搜索作物遗传改良国家重点实验室集群系统[f]" accesskey="f" id="searchInput" /><input type="hidden" value="特殊:搜索" name="title" /><input type="submit" name="fulltext" value="搜索" title="搜索含这些文字的页面" id="mw-searchButton" class="searchButton mw-fallbackSearchButton" /><input type="submit" name="go" value="前往" title="如果相同的标题存在的话便直接前往该页面" id="searchButton" class="searchButton" />								</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a style="background-image: url(resources/assets/wiki.png);" href="index.php/%e9%a6%96%e9%a1%b5.html"  title="访问首页"></a></div>
+						<div class="portal" role="navigation" id='p-navigation' aria-labelledby='p-navigation-label'>
+			<h3 id='p-navigation-label'>导航</h3>
+
+			<div class="body">
+									<ul>
+													<li id="n-mainpage-description"><a href="index.php/%e9%a6%96%e9%a1%b5.html" title="访问首页[z]" accesskey="z">首页</a></li>
+													<li id="n-recentchanges"><a href="index.php/%e7%89%b9%e6%ae%8a_%e6%9c%80%e8%bf%91%e6%9b%b4%e6%94%b9.html" title="本wiki最近更改的列表[r]" accesskey="r">最近更改</a></li>
+													<li id="n-randompage"><a href="index.php/%e4%bd%bf%e7%94%a8%e5%8a%a8%e6%80%81%e5%8f%a3%e4%bb%a4%e5%92%8c%e7%94%a8%e6%88%b7%e5%af%86%e7%a0%81%e7%99%bb%e5%bd%95%e6%9c%8d%e5%8a%a1%e5%99%a8-2.html" title="载入一个随机页面[x]" accesskey="x">随机页面</a></li>
+													<li id="n-help"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Contents" title="查找帮助的地方">帮助</a></li>
+											</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			<h3 id='p-tb-label'>工具</h3>
+
+			<div class="body">
+									<ul>
+													<li id="t-whatlinkshere"><a href="index.php/%e7%89%b9%e6%ae%8a_%e9%93%be%e5%85%a5%e9%a1%b5%e9%9d%a2/LSF_%e5%9f%ba%e6%9c%ac%e4%bd%bf%e7%94%a8.html" title="所有链接至本页面的wiki页面的列表[j]" accesskey="j">链入页面</a></li>
+													<li id="t-recentchangeslinked"><a href="index.php/%e7%89%b9%e6%ae%8a_%e7%9b%b8%e5%85%b3%e6%9b%b4%e6%94%b9/LSF_%e5%9f%ba%e6%9c%ac%e4%bd%bf%e7%94%a8.html" title="链自本页的页面的最近更改[k]" accesskey="k">相关更改</a></li>
+													<li id="t-specialpages"><a href="index.php/%e7%89%b9%e6%ae%8a_%e7%89%b9%e6%ae%8a%e9%a1%b5%e9%9d%a2.html" title="所有特殊页面的列表[q]" accesskey="q">特殊页面</a></li>
+													<li id="t-permalink"><a href="indexeac7.html?title=LSF_%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8&amp;oldid=380" title="本页面该版本的固定链接">固定链接</a></li>
+													<li id="t-info"><a href="indexd09c.html?title=LSF_%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8&amp;action=info">页面信息</a></li>
+											</ul>
+							</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> 本页面最后修改于2019年5月5日 (星期日) 10:51。</li>
+											<li id="footer-info-viewcount">本页面已经被访问过3,066次。</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="index.php/Cluster_%e9%9a%90%e7%a7%81%e6%9d%83%e6%94%bf%e7%ad%96.html" title="Cluster:隐私权政策">隐私政策</a></li>
+											<li id="footer-places-about"><a href="index.php/Cluster_%e5%85%b3%e4%ba%8e.html" title="Cluster:关于">关于作物遗传改良国家重点实验室集群系统</a></li>
+											<li id="footer-places-disclaimer"><a href="index.php/Cluster_%e5%85%8d%e8%b4%a3%e5%a3%b0%e6%98%8e.html" title="Cluster:免责声明">免责声明</a></li>
+									</ul>
+									<div style="clear:both"></div>
+		</div>
+		<script>/*<![CDATA[*/window.jQuery && jQuery.ready();/*]]>*/</script><script>if(window.mw){
+mw.loader.state({"site":"loading","user":"ready","user.groups":"ready"});
+}</script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.toc","mediawiki.action.view.postEdit","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest"],null,true);
+}</script>
+<script>if(window.mw){
+document.write("\u003Cscript src=\"http://hpc.ncpgr.cn:8093/mediawiki/load.php?debug=false\u0026amp;lang=zh-cn\u0026amp;modules=site\u0026amp;only=scripts\u0026amp;printable=1\u0026amp;skin=vector\u0026amp;*\"\u003E\u003C/script\u003E");
+}</script>
+<script>if(window.mw){
+mw.config.set({"wgBackendResponseTime":271});
+}</script>
+	</body>
+
+<!-- Mirrored from hpc.ncpgr.cn:8093/mediawiki/index.php?title=LSF_%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8&printable=yes by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 13 May 2019 09:23:55 GMT -->
+</html>
+	
